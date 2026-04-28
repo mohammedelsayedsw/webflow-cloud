@@ -1,0 +1,19 @@
+{
+  "cloud": {
+    "framework": "nextjs"
+  },
+  "devlink": {
+    "host": "https://api.webflow.com",
+    "rootDir": "./devlink",
+    "cssModules": true,
+    "relativeHrefRoot": "/"
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1777378237937,
+      "version": "1.18.0"
+    }
+  },
+  "siteId": "61387043ab1e4143deac1e21"
+}
