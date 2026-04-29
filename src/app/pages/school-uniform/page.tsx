@@ -8,6 +8,7 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+import Image from "next/image";
 import { ScandiwebHeader } from "@/components/scandiweb-header";
 import { ScandiwebFooter } from "@/components/scandiweb-footer";
 import { HubSpotForm } from "@/components/hubspot-form";
@@ -258,14 +259,17 @@ function TrustLogos() {
         </div>
         <div className="flex flex-wrap items-center gap-x-8 md:gap-x-10 gap-y-5 flex-1 md:justify-end">
           {logos.map((l, i) => (
-            <img
+            <Image
               key={i}
               src={l.src}
               alt={l.alt}
-              className="w-auto opacity-80"
+              width={200}
+              height={40}
+              className="opacity-80"
               style={{
                 maxHeight: `${l.h}px`,
                 height: "auto",
+                width: "auto",
                 filter: "brightness(0) invert(1)",
               }}
             />
@@ -2322,8 +2326,7 @@ function BrowserFrame({
           {url}
         </div>
       </div>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} className="block w-full h-auto" />
+      <Image src={src} alt={alt} width={1440} height={900} className="block w-full h-auto" />
     </div>
   );
 }
@@ -3352,9 +3355,11 @@ function CTA() {
                 – multi-child accounts, school-gated catalogs, ERP fallbacks, term-start traffic. You configure them to your stack in 11 weeks.&rdquo;
               </blockquote>
               <div className="mt-5 pt-4 border-t border-white/10 flex items-center gap-4">
-                <img
+                <Image
                   src="/team/aigars.png"
                   alt="Aigars Pavlovics"
+                  width={44}
+                  height={44}
                   className="h-11 w-11 rounded-full object-cover shrink-0"
                   style={{
                     border: "1px solid rgba(230,231,239,0.2)",

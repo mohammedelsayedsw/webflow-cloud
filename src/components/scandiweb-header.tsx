@@ -12,6 +12,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const PRIMARY_LINKS = [
   { n: "1", label: "Home", href: "https://scandiweb.com/" },
@@ -79,9 +80,11 @@ export function ScandiwebHeader() {
             aria-label="scandiweb"
             className="block transition-opacity hover:opacity-80"
           >
-            <img
+            <Image
               src="/logos/scandiweb.svg"
               alt="scandiweb"
+              width={140}
+              height={20}
               className="h-[18px] md:h-5 w-auto block"
             />
           </a>
