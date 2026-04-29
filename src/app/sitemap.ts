@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-export const revalidate = 3 * 60 * 60; // 3 hours
+export const revalidate = 10800; // 3 hours
 
 const TARGET_BASE = "https://scandiweb.com";
 
