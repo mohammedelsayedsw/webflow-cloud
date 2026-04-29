@@ -1,0 +1,139 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dual SSO with audit pipeline · 3 identity providers + audit hub + live log">
+  <defs>
+    <radialGradient id="ssoRing" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#6EF76E" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#6EF76E" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#6EF76E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <text x="20" y="26" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono" letter-spacing="2">
+    IDENTITY PROVIDERS
+  </text>
+
+  <!-- Provider 1 · AWS Cognito (orange) -->
+  <g>
+    <rect x="20" y="48" width="240" height="78" rx="3" fill="#e6e7ef" fill-opacity="0.035" stroke="#e6e7ef" stroke-opacity="0.12"/>
+    <rect x="20" y="48" width="3" height="78" fill="#FF5A31"/>
+    <rect x="36" y="66" width="42" height="42" rx="3" fill="#FF5A31" fill-opacity="0.14"/>
+    <rect x="36" y="66" width="42" height="42" rx="3" fill="none" stroke="#FF5A31" stroke-width="1.2" stroke-opacity="0.9"/>
+    <text x="57" y="93" fill="#FF5A31" font-size="15" font-family="JetBrains Mono" font-weight="700" text-anchor="middle" letter-spacing="0.5">AW</text>
+    <text x="90" y="76" fill="#ffffff" font-size="13" font-family="Inter" font-weight="600">AWS Cognito</text>
+    <text x="90" y="93" fill="#FF5A31" font-size="9" font-family="JetBrains Mono" letter-spacing="1.5">SAML · JWT</text>
+    <text x="90" y="110" fill="#ffffff" fill-opacity="0.6" font-size="10" font-family="Inter">School admins</text>
+    <!-- feeder line to trunk -->
+    <path d="M 260 87 H 280" fill="none" stroke="#FF5A31" stroke-opacity="0.5" stroke-dasharray="3 4"/>
+    <circle cx="280" cy="87" r="2.5" fill="#FF5A31"/>
+  </g>
+
+  <!-- Provider 2 · Microsoft Entra ID (blue) -->
+  <g>
+    <rect x="20" y="148" width="240" height="78" rx="3" fill="#e6e7ef" fill-opacity="0.035" stroke="#e6e7ef" stroke-opacity="0.12"/>
+    <rect x="20" y="148" width="3" height="78" fill="#3F4AAF"/>
+    <rect x="36" y="166" width="42" height="42" rx="3" fill="#3F4AAF" fill-opacity="0.14"/>
+    <rect x="36" y="166" width="42" height="42" rx="3" fill="none" stroke="#3F4AAF" stroke-width="1.2" stroke-opacity="0.9"/>
+    <text x="57" y="193" fill="#3F4AAF" font-size="15" font-family="JetBrains Mono" font-weight="700" text-anchor="middle" letter-spacing="0.5">MS</text>
+    <text x="90" y="176" fill="#ffffff" font-size="13" font-family="Inter" font-weight="600">Microsoft Entra ID</text>
+    <text x="90" y="193" fill="#3F4AAF" font-size="9" font-family="JetBrains Mono" letter-spacing="1.5">OIDC · SAML</text>
+    <text x="90" y="210" fill="#ffffff" fill-opacity="0.6" font-size="10" font-family="Inter">Internal staff</text>
+    <path d="M 260 187 H 280" fill="none" stroke="#3F4AAF" stroke-opacity="0.5" stroke-dasharray="3 4"/>
+    <circle cx="280" cy="187" r="2.5" fill="#3F4AAF"/>
+  </g>
+
+  <!-- Provider 3 · Google OAuth (mint green) -->
+  <g>
+    <rect x="20" y="248" width="240" height="78" rx="3" fill="#e6e7ef" fill-opacity="0.035" stroke="#e6e7ef" stroke-opacity="0.12"/>
+    <rect x="20" y="248" width="3" height="78" fill="#6EF76E"/>
+    <rect x="36" y="266" width="42" height="42" rx="3" fill="#6EF76E" fill-opacity="0.14"/>
+    <rect x="36" y="266" width="42" height="42" rx="3" fill="none" stroke="#6EF76E" stroke-width="1.2" stroke-opacity="0.9"/>
+    <text x="57" y="293" fill="#6EF76E" font-size="15" font-family="JetBrains Mono" font-weight="700" text-anchor="middle" letter-spacing="0.5">GO</text>
+    <text x="90" y="276" fill="#ffffff" font-size="13" font-family="Inter" font-weight="600">Google OAuth 2.0</text>
+    <text x="90" y="293" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" letter-spacing="1.5">OIDC</text>
+    <text x="90" y="310" fill="#ffffff" fill-opacity="0.6" font-size="10" font-family="Inter">Parents · commerce</text>
+    <path d="M 260 287 H 280" fill="none" stroke="#6EF76E" stroke-opacity="0.5" stroke-dasharray="3 4"/>
+    <circle cx="280" cy="287" r="2.5" fill="#6EF76E"/>
+  </g>
+
+  <!-- Vertical trunk connecting all three providers -->
+  <path d="M 280 87 L 280 287" fill="none" stroke="#6EF76E" stroke-opacity="0.5" stroke-width="1.2"/>
+
+  <!-- Single feeder from trunk → hub edge -->
+  <path d="M 280 210 L 336 210" fill="none" stroke="#6EF76E" stroke-opacity="0.7" stroke-width="1.3" stroke-dasharray="3 4"/>
+  <path d="M 334 206 L 340 210 L 334 214" fill="#6EF76E"/>
+
+  <!-- ============================ HUB · audit core ============================ -->
+  <circle cx="380" cy="210" r="76" fill="url(#ssoRing)"/>
+  <circle cx="380" cy="210" r="56" fill="none" stroke="#6EF76E" stroke-opacity="0.35" stroke-dasharray="2 6"/>
+  <circle cx="380" cy="210" r="44" fill="#10132C" fill-opacity="0.85" stroke="#6EF76E" stroke-opacity="0.85" stroke-width="1.5"/>
+  <!-- lock glyph -->
+  <path d="M 370 208 h 20 v 16 h -20 z" fill="#6EF76E" fill-opacity="0.12" stroke="#6EF76E" stroke-width="1.5"/>
+  <path d="M 374 208 v -8 a 6 6 0 0 1 12 0 v 8" fill="none" stroke="#6EF76E" stroke-width="1.5"/>
+  <circle cx="380" cy="216" r="1.8" fill="#6EF76E"/>
+  <!-- label below hub -->
+  <text x="380" y="276" fill="#6EF76E" font-size="10" font-family="JetBrains Mono" letter-spacing="2" text-anchor="middle" font-weight="700">AUDIT · SYSTEM LEVEL</text>
+  <text x="380" y="292" fill="#ffffff" fill-opacity="0.55" font-size="9" font-family="JetBrains Mono" text-anchor="middle" letter-spacing="1">every login · every action</text>
+
+  <!-- pipeline arrow hub → log panel -->
+  <path d="M 424 210 H 484" fill="none" stroke="#6EF76E" stroke-opacity="0.55" stroke-dasharray="3 4"/>
+  <path d="M 482 206 L 490 210 L 482 214" fill="#6EF76E"/>
+
+  <!-- ============================ LOG stream ============================ -->
+  <text x="500" y="28" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono" letter-spacing="2">
+    LOG · LIVE
+  </text>
+  <rect x="500" y="42" width="200" height="348" rx="3" fill="#e6e7ef" fill-opacity="0.025" stroke="#e6e7ef" stroke-opacity="0.1"/>
+
+  <!-- table header -->
+  <text x="512" y="62" fill="#ffffff" fill-opacity="0.4" font-size="9" font-family="JetBrains Mono" letter-spacing="1.5">TIME</text>
+  <text x="578" y="62" fill="#ffffff" fill-opacity="0.4" font-size="9" font-family="JetBrains Mono" letter-spacing="1.5">EVENT</text>
+  <line x1="508" x2="692" y1="70" y2="70" stroke="#e6e7ef" stroke-opacity="0.1"/>
+
+  <!-- LIVE indicator -->
+  <circle cx="686" cy="54" r="3" fill="#6EF76E"/>
+  <text x="678" y="58" fill="#6EF76E" fill-opacity="0.85" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5" text-anchor="end" font-weight="700">LIVE</text>
+
+  <!-- log rows -->
+  <g>
+    <rect x="508" y="74" width="184" height="40" fill="#6EF76E" fill-opacity="0.05"/>
+    <text x="512" y="88" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:42:11</text>
+    <rect x="570" y="76" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="88" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">school.admin</text>
+    <text x="578" y="104" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">login</text>
+    <text x="686" y="88" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+  <g>
+    <text x="512" y="136" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:42:58</text>
+    <rect x="570" y="124" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="136" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">student.edit</text>
+    <text x="578" y="152" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">114 rows</text>
+    <text x="686" y="136" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+  <g>
+    <text x="512" y="184" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:44:03</text>
+    <rect x="570" y="172" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="184" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">export.start</text>
+    <text x="578" y="200" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">grade-5</text>
+    <text x="686" y="184" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+  <g>
+    <text x="512" y="232" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:47:18</text>
+    <rect x="570" y="220" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="232" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">order.create</text>
+    <text x="578" y="248" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">#3104</text>
+    <text x="686" y="232" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+  <g>
+    <text x="512" y="280" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:49:45</text>
+    <rect x="570" y="268" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="280" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">parent.login</text>
+    <text x="578" y="296" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">oauth</text>
+    <text x="686" y="280" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+  <g>
+    <text x="512" y="328" fill="#ffffff" fill-opacity="0.55" font-size="10" font-family="JetBrains Mono">09:52:02</text>
+    <rect x="570" y="316" width="2" height="14" fill="#6EF76E" opacity="0.7"/>
+    <text x="578" y="328" fill="#ffffff" font-size="11" font-family="JetBrains Mono" font-weight="500">export.done</text>
+    <text x="578" y="344" fill="#ffffff" fill-opacity="0.5" font-size="9" font-family="JetBrains Mono">4.2 MB</text>
+    <text x="686" y="328" fill="#6EF76E" font-size="9" font-family="JetBrains Mono" text-anchor="end" font-weight="700" letter-spacing="1">OK</text>
+  </g>
+</svg>

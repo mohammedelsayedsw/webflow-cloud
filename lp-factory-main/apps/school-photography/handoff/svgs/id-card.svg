@@ -1,0 +1,183 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ID card builder · before CSV chaos, after in-platform builder">
+  <defs>
+    <linearGradient id="idFaceSkin" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#DADCF1"/>
+      <stop offset="100%" stop-color="#8d91a8"/>
+    </linearGradient>
+    <linearGradient id="idCardBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1efe9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Vertical divider -->
+  <path d="M 300 40 V 380" stroke="#e6e7ef" stroke-opacity="0.14" stroke-dasharray="3 5"/>
+
+  <!-- ============================ LEFT · BEFORE ============================ -->
+  <text x="20" y="28" fill="#E04F4F" fill-opacity="0.9" font-size="10" font-family="JetBrains Mono" letter-spacing="2">
+    BEFORE · CSV EMAIL CHAIN
+  </text>
+
+  <!-- 3 email threads stacked cleanly -->
+  <g>
+    <rect x="20" y="58" width="280" height="54" rx="2" fill="#E04F4F" fill-opacity="0.05" stroke="#E04F4F" stroke-opacity="0.4"/>
+    <rect x="20" y="58" width="3" height="54" fill="#E04F4F" opacity="0.75"/>
+    <circle cx="42" cy="80" r="3" fill="#E04F4F"/>
+    <text x="54" y="83" fill="#ffffff" font-size="12" font-family="JetBrains Mono">RE: RE: cards-v4.csv</text>
+    <text x="54" y="100" fill="#ffffff" fill-opacity="0.5" font-size="10" font-family="JetBrains Mono">3 threads · 12 replies</text>
+    <line x1="54" y1="80" x2="288" y2="80" stroke="#E04F4F" stroke-opacity="0.55"/>
+  </g>
+  <g>
+    <rect x="20" y="128" width="280" height="54" rx="2" fill="#E04F4F" fill-opacity="0.05" stroke="#E04F4F" stroke-opacity="0.4"/>
+    <rect x="20" y="128" width="3" height="54" fill="#E04F4F" opacity="0.75"/>
+    <circle cx="42" cy="150" r="3" fill="#E04F4F"/>
+    <text x="54" y="153" fill="#ffffff" font-size="12" font-family="JetBrains Mono">RE: RE: cards-v3.csv</text>
+    <text x="54" y="170" fill="#ffffff" fill-opacity="0.5" font-size="10" font-family="JetBrains Mono">merge conflicts</text>
+    <line x1="54" y1="150" x2="288" y2="150" stroke="#E04F4F" stroke-opacity="0.55"/>
+  </g>
+  <g>
+    <rect x="20" y="198" width="280" height="54" rx="2" fill="#E04F4F" fill-opacity="0.05" stroke="#E04F4F" stroke-opacity="0.4"/>
+    <rect x="20" y="198" width="3" height="54" fill="#E04F4F" opacity="0.75"/>
+    <circle cx="42" cy="220" r="3" fill="#E04F4F"/>
+    <text x="54" y="223" fill="#ffffff" font-size="12" font-family="JetBrains Mono">RE: RE: cards-v2.csv</text>
+    <text x="54" y="240" fill="#ffffff" fill-opacity="0.5" font-size="10" font-family="JetBrains Mono">which version is final?</text>
+    <line x1="54" y1="220" x2="288" y2="220" stroke="#E04F4F" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- count footer -->
+  <text x="20" y="390" fill="#E04F4F" fill-opacity="0.75" font-size="10" font-family="JetBrains Mono" letter-spacing="1.5">
+    ↯ 14 THREADS · 52 REPLIES
+  </text>
+
+  <!-- ============================ RIGHT · AFTER ============================ -->
+  <text x="700" y="28" fill="#6EF76E" font-size="10" font-family="JetBrains Mono" letter-spacing="2" text-anchor="end">
+    AFTER · IN-PLATFORM BUILDER
+  </text>
+
+  <!-- ID card body @ cx=344, cy=54, cw=352, ch=200 -->
+  <rect x="344" y="54" width="352" height="200" rx="4" fill="url(#idCardBg)" stroke="#10132C" stroke-opacity="0.15"/>
+  <rect x="344" y="54" width="6" height="200" fill="#3F4AAF"/>
+
+  <!-- Header row -->
+  <rect x="362" y="68" width="96" height="14" rx="2" fill="#10132C"/>
+  <text x="368" y="78" fill="#ffffff" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5" font-weight="700">LINCOLN HIGH</text>
+  <text x="678" y="78" fill="#10132C" fill-opacity="0.55" font-size="8" font-family="JetBrains Mono" text-anchor="end" letter-spacing="1.5">2026 / GRADE 10</text>
+
+  <!-- Photo frame -->
+  <rect x="362" y="94" width="78" height="100" rx="2" fill="#1f2346"/>
+  <circle cx="401" cy="128" r="16" fill="url(#idFaceSkin)"/>
+  <path d="M 377 186 Q 401 154 425 186 L 425 194 L 377 194 Z" fill="url(#idFaceSkin)"/>
+  <!-- Frame corner ticks -->
+  <line x1="360" y1="94" x2="366" y2="94" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="362" y1="92" x2="362" y2="98" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="438" y1="94" x2="442" y2="94" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="440" y1="92" x2="440" y2="98" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="360" y1="194" x2="366" y2="194" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="362" y1="190" x2="362" y2="196" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="438" y1="194" x2="442" y2="194" stroke="#ffffff" stroke-opacity="0.6"/>
+  <line x1="440" y1="190" x2="440" y2="196" stroke="#ffffff" stroke-opacity="0.6"/>
+
+  <!-- Name + meta -->
+  <text x="458" y="112" fill="#10132C" font-size="16" font-family="Golos Text" font-weight="700">Aidan Park</text>
+  <text x="458" y="130" fill="#10132C" fill-opacity="0.7" font-size="10" font-family="Inter">Student ID · 4452981</text>
+
+  <!-- Field rows -->
+  <text x="458" y="152" fill="#10132C" fill-opacity="0.45" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5">HOUSE</text>
+  <text x="520" y="152" fill="#10132C" font-size="10" font-family="JetBrains Mono">Wellington</text>
+  <text x="458" y="166" fill="#10132C" fill-opacity="0.45" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5">FORM</text>
+  <text x="520" y="166" fill="#10132C" font-size="10" font-family="JetBrains Mono">10-C</text>
+  <text x="458" y="180" fill="#10132C" fill-opacity="0.45" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5">SIC</text>
+  <text x="520" y="180" fill="#10132C" font-size="10" font-family="JetBrains Mono">L-0442-10-C</text>
+  <text x="458" y="194" fill="#10132C" fill-opacity="0.45" font-size="8" font-family="JetBrains Mono" letter-spacing="1.5">EXPIRES</text>
+  <text x="520" y="194" fill="#10132C" font-size="10" font-family="JetBrains Mono">12 / 2026</text>
+
+  <!-- Barcode strip -->
+  <g transform="translate(362, 216)">
+    <rect x="0" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="6" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="11" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="15" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="19" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="25" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="30" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="34" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="38" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="44" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="49" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="53" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="57" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="63" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="68" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="72" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="76" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="82" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="87" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="91" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="95" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="101" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="106" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="110" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="114" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="120" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="125" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="129" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="133" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="139" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="144" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="148" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="152" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="158" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="163" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="167" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="171" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="177" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="182" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="186" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="190" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="196" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="201" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="205" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="209" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="215" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="220" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="224" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="228" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="234" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="239" y="0" width="1.4" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="243" y="0" width="2" height="16" fill="#10132C" opacity="0.85"/>
+    <rect x="247" y="0" width="3" height="16" fill="#10132C" opacity="0.85"/>
+  </g>
+  <text x="678" y="246" fill="#10132C" fill-opacity="0.55" font-size="8" font-family="JetBrains Mono" text-anchor="end" letter-spacing="1">v1 · LOCKED</text>
+
+  <!-- Pipeline strip · Preview → Lock → Export → Audit -->
+  <line x1="386" y1="310" x2="654" y2="310" stroke="#6EF76E" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+
+  <!-- Preview -->
+  <g>
+    <rect x="344" y="288" width="82" height="46" rx="3" fill="#10132C" fill-opacity="0.55" stroke="#e6e7ef" stroke-opacity="0.14"/>
+    <circle cx="354" cy="303" r="3.5" fill="#6EF76E"/>
+    <text x="364" y="307" fill="#ffffff" font-size="11" font-family="Inter" font-weight="600">Preview</text>
+    <text x="354" y="324" fill="#ffffff" fill-opacity="0.6" font-size="9" font-family="JetBrains Mono">1,420 cards</text>
+  </g>
+  <!-- Lock -->
+  <g>
+    <rect x="434" y="288" width="82" height="46" rx="3" fill="#10132C" fill-opacity="0.55" stroke="#e6e7ef" stroke-opacity="0.14"/>
+    <circle cx="444" cy="303" r="3.5" fill="#3F4AAF"/>
+    <text x="454" y="307" fill="#ffffff" font-size="11" font-family="Inter" font-weight="600">Lock</text>
+    <text x="444" y="324" fill="#ffffff" fill-opacity="0.6" font-size="9" font-family="JetBrains Mono">v1 final</text>
+  </g>
+  <!-- Export -->
+  <g>
+    <rect x="524" y="288" width="82" height="46" rx="3" fill="#10132C" fill-opacity="0.55" stroke="#e6e7ef" stroke-opacity="0.14"/>
+    <circle cx="534" cy="303" r="3.5" fill="#3F4AAF"/>
+    <text x="544" y="307" fill="#ffffff" font-size="11" font-family="Inter" font-weight="600">Export</text>
+    <text x="534" y="324" fill="#ffffff" fill-opacity="0.6" font-size="9" font-family="JetBrains Mono">CSV · print</text>
+  </g>
+  <!-- Audit -->
+  <g>
+    <rect x="614" y="288" width="82" height="46" rx="3" fill="#10132C" fill-opacity="0.55" stroke="#e6e7ef" stroke-opacity="0.14"/>
+    <circle cx="624" cy="303" r="3.5" fill="#6EF76E"/>
+    <text x="634" y="307" fill="#ffffff" font-size="11" font-family="Inter" font-weight="600">Audit</text>
+    <text x="624" y="324" fill="#ffffff" fill-opacity="0.6" font-size="9" font-family="JetBrains Mono">every action</text>
+  </g>
+</svg>

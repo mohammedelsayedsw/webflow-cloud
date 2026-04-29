@@ -1,0 +1,14 @@
+{
+  "name": "lp-factory",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/school-photography",
+    "build": "npm run build --workspace=apps/school-photography",
+    "lint": "npm run lint --workspaces --if-present"
+  }
+}
